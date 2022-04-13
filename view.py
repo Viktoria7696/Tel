@@ -1,6 +1,7 @@
 import read_file as rf
 import add_contact as ac
 import del_contact as dc
+import find_contact as fc
 def hello_user(): 
     print("Добро пожаловать в телефонную книгу.")
     print("""Выберете команду: 
@@ -17,8 +18,8 @@ def hello_user():
         # choice = input('> ')
     if choice == 'list':
         rf.read_file()
-    # elif choice == 'find':
-    #     find(contacts)
+    elif choice == 'find':
+        fc.find_contact()
     elif choice == 'add':
         ac.write_contact()
     elif choice == 'del':
@@ -28,5 +29,5 @@ def hello_user():
     # # elif choice == 'exit':            
     else:
         print("Неизвестная команда")
-# def logic(choice):
+
     
